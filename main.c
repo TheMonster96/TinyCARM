@@ -4,29 +4,18 @@
 
 //LEXER 
 
-enum token_type {
-  ID,
-  ASSIGN,
-  NOT_ASSIGN,
-  SEMICOLON,
-  INTVAL
-};
 
-
-struct token {
-  enum token_type type;
-};
 
 
 
 int main(){
 
 
-  int num_token = 0;          //variabile contatore token
+      
   char text[50];
   
   fgets(text, 50, stdin);;
-                                            //ci siamo 
+                                             
 
   
   printf("CODE \n");
@@ -46,7 +35,7 @@ int main(){
 
 
   //conta parole (passiamo la stringa e il contatore)
-  token_count(text, num_token);
+  token_count(text);
 
   return 0;
 }
