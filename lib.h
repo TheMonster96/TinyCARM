@@ -1,6 +1,23 @@
 #include <stdio.h>
 #include <string.h>
 
+//creazione struct token
+enum token_type {
+  ID,
+  ASSIGN,
+  NOT_ASSIGN,
+  SEMICOLON,
+  INTVAL
+};
+
+
+struct token {
+  enum token_type type;
+};
+
+
+
+
 //funzione rimozione newline
 void remove_newline(char text[]){
   int len = strlen(text);
@@ -12,7 +29,8 @@ void remove_newline(char text[]){
 
 
 //funzione conta token
-void token_count(char text[], int contatore){
+void token_count(char text[]){
+  int contatore = 0;        //contatore token
   unsigned short in_word = 0;   //0 = fuori parola; 1 = dentro la parola
 
 
