@@ -19,8 +19,8 @@ int main(){
 
   
   printf("CODE \n");
-  printf("%s", text);
-
+  printf("%s \n", text);
+  
 
 
  //rimuovi newline
@@ -35,7 +35,7 @@ int main(){
 
 
   //conta parole (passiamo la stringa e il contatore)
-  token_count(text);
+  tokenizer(text);
 
   return 0;
 }
