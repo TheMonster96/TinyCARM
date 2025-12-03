@@ -44,7 +44,7 @@ void recognization(char* str){
 
     else{
       strtol(str, &endptr, 10);
-      if(*endptr == '\0'){
+      if(*endptr == '\0'){        //se l'endptr = '\0', vuol dire che la stringa è un numero valido.
         printf("INTVAL \n");
       }
       else{
